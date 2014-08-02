@@ -1,0 +1,20 @@
+@import nib
+
+.table
+	width: 100%;
+	text-align: left;
+	tr
+		line-height: 36px;
+	td,
+	th
+		padding: 0 8px;
+	thead tr
+		border-bottom: 2px solid #ddd;
+	tbody tr
+		border: 1px solid #ddd;
+		border-width: 1px 0;
+		&:hover
+			td
+				background-color: #E7F3FA;
+		&:nth-child(odd)
+			background-color: #f6f6f6;
