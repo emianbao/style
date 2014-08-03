@@ -1,18 +1,27 @@
 @import nib
 
+html, body
+	height: 100%
+body
+	font-family: Tahoma,sans-serif,Microsoft YaHei
+body, a
+	color: #333
 .page-container
 	overflow: hidden
+	min-height: 100%
 .page-aside
 	position: relative
 	float: left
 	width: 200px
+	min-height: 100%
 	padding-bottom: 3000px
 	margin-bottom: -3000px
 	background-color: #eee
 	.logo
 		display: block
 		height: 50px
-		background: #076E96 url(logo.png) no-repeat 10px 50%
+		background: #076E96 url(i/logo.png) no-repeat 10px 50%
+		background: #076E96
 		color: #fff
 		font-size: 18px
 		line-height: 50px
@@ -38,6 +47,7 @@
 			border-radius: 2px 0 0 2px
 			&:hover
 				background-color: #ddd
+				text-decoration: none
 		.current, .current:hover
 			background-color: #fff
 			color: #287FA8
@@ -93,9 +103,8 @@
 				background-color: #FF8D24
 				color: #fff
 				font-size: 12px
-				line-height: 12px
-				padding: 2px 5px 1px
-				font-weight: bold
+				line-height: 1
+				padding: 0 5px 1px
 				border-radius: 2px
 			.user img
 				width: 40px

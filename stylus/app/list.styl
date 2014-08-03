@@ -1,0 +1,112 @@
+/* 过滤栏 */
+.filter-bar{
+	text-align: right;
+}
+.search-bar .type:after{
+	margin-left: 5px;
+}
+.search-bar input{
+	width: 150px;
+}
+.search-bar .search{
+	font-size: 16px;
+}
+.type-list{
+	position: absolute;
+	border: 1px solid #ddd;
+	border-top: none;
+	background-color: #f6f6f6;
+	border-radius: 0 0 2px 2px;
+	overflow: hidden;
+}
+.type-list a{
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 15px;
+	text-align: left;
+}
+.type-list a:hover{
+	text-decoration: none;
+	background-color: #eee;
+}
+/* 列表 */
+.table .edit{
+	color: #287FA8;
+}
+.table .edit:hover{
+	text-decoration: none;
+	color: #076E96;
+}
+.table .edit:before{
+	margin-right: 5px;
+}
+/* 修改框 */
+.mask-bg{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.3;
+}
+.mask-box{
+	position: fixed;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	border-radius: 3px;
+	overflow: hidden;
+	left: 50%;
+	margin-left: -205px;
+	top: 50%;
+	/*margin-top: -235px;*/
+}
+.form .close{
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	font-size: 14px;
+	color: #287FA8;
+}
+.form .close:hover{
+	text-decoration: none;
+	color: #076E96;
+}
+.form .form-header{
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	padding: 0 20px;
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+}
+.form .form-body{
+	padding: 30px;
+	width: 350px;
+}
+.form .input-item{
+	position: relative;
+	padding-left: 70px;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 10px;
+}
+.form .input-item label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 60px;
+	text-align: right;
+	font-size: 14px;
+}
+.form .input-item input{
+	width: 260px;
+}
+.form .action{
+	text-align: right;
+	margin-top: 10px;
+}
+.form .action .btn{
+	margin-left: 10px;
+}

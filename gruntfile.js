@@ -7,12 +7,34 @@ module.exports = function(grunt) {
                 compress:false
             },
             compile: {
-                files:[{expand: true, flatten:true, src:["stylus/*.styl"], dest:"css/",ext:".css"}]
+                files:[{
+                    expand: true,
+                    flatten:true,
+                    src:["stylus/component/*.styl"],
+                    dest:"css/component/",
+                    ext:".css"
+                }, {
+                    expand: true,
+                    flatten:true,
+                    src:["stylus/app/*.styl"],
+                    dest:"css/app/",
+                    ext:".css"
+                }]
             }
         },
         copy:{
             imgs:{
-                files:[{expand: true, flatten:true, src:["stylus/i/**/*.png", "stylus/i/**/*.gif"], dest:"css/i/"}]
+                files:[{
+                    expand: true,
+                    flatten:true,
+                    src:["stylus/component/i/*.png"],
+                    dest:"css/component/i/"
+                },{
+                    expand: true,
+                    flatten:true,
+                    src:["stylus/component/iconfont/*.eot","stylus/component/iconfont/*.svg","stylus/component/iconfont/*.ttf","stylus/component/iconfont/*.woff"],
+                    dest:"css/component/iconfont/"
+                }]
             }
         }
     });
