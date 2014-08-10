@@ -1,25 +1,56 @@
-html,body{
-	height: 100%;
-	background-color: #e3e3e3;
-}
-.login-box{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 350px;
-	margin: -178px 0 0 130px;
-	background-color: #fafafa;
-	border: 1px solid #fff;
-	box-shadow: 0 0 80px rgba(0,0,0,.2);
-	border-radius: 3px;
-}
+html
+	background-color: #eee
+body
+	padding-bottom: 100px
+	color: #333
+	font-family: Tahoma,sans-serif,Microsoft YaHei
+.header
+	position: relative
+	height: 80px
+	background-color: #fff
+	box-shadow: 0 5px 5px rgba(0,0,0,.1)
+	.container
+		width: 960px
+		margin: 0 auto
+	.logo
+		float: left
+		height: 40px
+		line-height: 40px
+		padding-left: 60px
+		margin: 20px 0
+		background: url("logo.png") no-repeat
+		color: #287fa8
+		font-size: 28px
+		text-decoration: none
+	h1
+		float: left
+		font-size: 28px
+		line-height: 28px
+		color: #999
+		border-left: 1px solid #ddd
+		margin: 26px 10px
+		padding-left: 10px
+.body
+	height: 500px
+	background: url("login-bg.png") no-repeat 50% 50%
+	.container
+		position: relative
+		width: 960px
+		margin: 0 auto
+.login-box
+	position: absolute
+	top: 50px
+	right: 0
+	background-color: #fff
+	border-radius: 3px
+	box-shadow: 0 0 10px rgba(0,0,0,.1)
 .login-box header{
 	height: 50px;
 	line-height: 60px;
 	font-size: 24px;
 	padding: 0 20px;
 	text-align: center;
-	color: #ccc;
+	color: #6ba2d8;
 }
 .login-box section{
 	margin: 20px 30px;
@@ -41,13 +72,11 @@ html,body{
 	text-align: right;
 	font-size: 14px;
 }
+.login-box input:focus{
+	border-color: #6ba2d8;
+}
 .login-box .input-item input{
-	height: 34px;
-	line-height: 34px;
-	padding: 0 10px;
-	border: 1px solid #ddd;
-	width: 208px;
-	border-radius: 2px;
+	width: 210px;
 }
 .login-box .captcha input{
 	width: 100px;
@@ -56,7 +85,7 @@ html,body{
 }
 .login-box .captcha img{
 	float: left;
-	width: 105px;
+	width: 107px;
 	height: 36px;
 	margin-left: 3px;
 	background-color: #eee;
@@ -71,16 +100,6 @@ html,body{
 }
 .login-box .submit{
 	width: 290px;
-	height: 36px;
-	font-size: 14px;
-	border: none;
-	background-color: #287FA8;
-	color: #fff;
-	border-radius: 2px;
-	cursor: pointer;
-}
-.login-box .submit:hover{
-	background-color: #076E96;
 }
 .login-box .other{
 	text-align: right;
@@ -92,3 +111,16 @@ html,body{
 .login-box .other a:hover{
 	color: #076E96;
 }
+
+.footer
+	position: absolute
+	top: 580px
+	bottom: 0
+	width: 100%
+	min-height: 100px
+	_height: 100px
+	background-color: #fff
+	box-shadow: 0 -5px 5px rgba(0,0,0,.1)
+	.container
+		width: 960px
+		margin: 0 auto

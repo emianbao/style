@@ -1,39 +1,27 @@
 @import nib
 
-.page-control{
-	text-align: right;
-	margin-top: 10px;
-}
-.page-control a,
-.page-control span{
-	display: inline-block;
-	height: 36px;
-	line-height: 36px;
-	padding: 0 10px;
-	min-width: 16px;
-	_width: 16px;
-	border-radius: 2px;
-	text-align: center;
-}
-.page-control a{
-	background-color: #eee;
-	text-decoration: none;
-}
-.page-control a:hover{
-	background-color: #ddd;
-}
-.page-control .pages span{
-	color: #ccc;
-}
-.page-control .current,
-.page-control .current:hover{
-	background-color: #287FA8;
-	color: #fff;
-	cursor: default;
-}
-.page-control .disabled,
-.page-control .disabled:hover{
-	background-color: #f3f3f3;
-	color: #ccc;
-	cursor: default;
-}
+.page-control
+	text-align: right
+	margin-top: 10px
+	a,
+	span
+		display: inline-block
+		height: 36px
+		line-height: 36px
+		padding: 0 10px
+		min-width: 16px
+		_width: 16px
+		border-radius: 2px
+		text-align: center
+	a
+		background-color: #eee
+		text-decoration: none
+		&:hover
+			background-color: #ddd
+	.pages span
+		color: #ccc
+	.current,
+	.current:hover
+		background-color: #287FA8
+		color: #fff
+		cursor: default
